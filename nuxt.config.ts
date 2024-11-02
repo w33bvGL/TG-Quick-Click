@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     isr: true,
     prerender: true,
 
-    devtools: {enabled: false},
+    devtools: {enabled: true},
 
     css: [
         '~/assets/styles/_root.sass',
@@ -32,5 +32,5 @@ export default defineNuxtConfig({
         viewer: true,
     },
 
-    modules: ['@nuxtjs/tailwindcss', '@nuxt/icon',]
+    modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/icon', 'nuxt-aos', 'nuxt-swiper']
 })

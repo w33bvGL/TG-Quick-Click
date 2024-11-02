@@ -16,6 +16,10 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxt/icon": "^1.6.1",
+    "@nuxt/image": "^1.8.1",
+    "nuxt-aos": "^1.2.5",
+    "nuxt-swiper": "^1.2.2",
     "sass": "^1.80.6"
   }
 }

@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [],
+    content: [
+        './pages/**/*.{vue,js,ts,jsx,tsx}',
+        './components/**/*.{vue,js,ts,jsx,tsx}',
+        './layouts/**/*.{vue,js,ts,jsx,tsx}',
+        './assets/**/*.{vue,js,ts,jsx,tsx,sass,scss}',
+    ],
     theme: {
         extend: {
             maxWidth: {
-                'big': '1700px',
-                '8xl': '1500px',
-                'medium': '',
-                'small': '',
-                'small2': '',
+                '8xl': '1800px',
             },
             backgroundImage: {
                 'vlada-gradient-1': 'linear-gradient(0deg, rgba(249, 250, 251, 1) 5%, rgba(249, 250, 251, 0.5) 40%, rgba(249,0,0,0) 80%);',
