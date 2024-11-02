@@ -3,10 +3,9 @@
 </script>
 
 <template>
-    <commonHeader/>
-    <slot/>
+    <div>
+        <commonHeader/>
+        <slot/>
+        <commonFooter/>
+    </div>
 </template>
-
-<style scoped lang="sass">
-
-</style>

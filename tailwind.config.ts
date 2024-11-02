@@ -20,22 +20,20 @@ export default {
                 'vlada-gradient-6': 'linear-gradient(rgb(106, 36, 8), rgb(183, 60, 11))',
             },
             colors: {
-                'vlada-color-1': '#dcbb8f',
-                'vlada-color-2': '#d8a774',
-                'vlada-color-3': '#e6c39b',
-                'vlada-color-4': 'rgb(177, 152, 105)',
-                'vlada-color-5': 'rgb(34, 24, 13)',
-                'vlada-color-6': 'rgba(43,33,25,0.8)',
-                'vlada-color-7': 'rgb(255, 240, 211)',
+                'vlada-color-1': '#D1DDE5',
+                'vlada-color-2': '#5F6569',
+                'vlada-color-3': '#C3C3C3',
+                'vlada-color-4': '#393D4D',
+                'vlada-color-5': '#8266FF',
+                'vlada-color-6': '#464646',
+                'vlada-color-7': '#70EE9C',
+                'vlada-color-8': '#A3A7FF',
             },
             borderWidth: {
                 '5': '5px',
             },
             fontFamily: {
-                'arpona-regular': ['arpona-regular', 'sans-serif'],
-                'one-lord': ['one-lord', 'sans-serif'],
-                'din-next-w1g': ['din-next-w1g', 'sans-serif'],
-                'cambria-regular': ['Cambria-regular', 'sans-serif']
+                'futur-regular': ['futur-regular', 'sans-serif'],
             },
             opacity: {
                 '2': '0.02'
