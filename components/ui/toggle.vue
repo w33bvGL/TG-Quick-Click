@@ -1,15 +1,3 @@
-<template>
-    <button v-if="props.type === 'primary'"
-            @click="toggle"
-            role="button"
-            tabindex="0"
-            :aria-pressed="isActive"
-            :class="['cursor-pointer', isActive ? 'bg-vlada-color-5' : 'bg-white text-black']"
-            class="px-4 py-2 rounded-3xl">
-        <span class="text-2xl font-medium">{{ label }}</span>
-    </button>
-</template>
-
 <script setup lang="ts">
 
 interface Props {
@@ -44,3 +32,17 @@ const handleKeyDown = (event: KeyboardEvent) => {
     }
 };
 </script>
+
+<template>
+    <button v-if="props.type === 'primary'"
+            @click="toggle"
+            role="button"
+            tabindex="0"
+            :aria-pressed="isActive"
+            :class="['cursor-pointer', isActive ? 'bg-vlada-color-5' : 'bg-white text-black']"
+            class="px-4 py-2 rounded-3xl">
+        <span class="text-base  md:text-2xl font-medium">{{ label }}</span>
+    </button>
+</template>
+
+

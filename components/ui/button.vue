@@ -33,7 +33,7 @@ const props = defineProps<Props>();
     >
         <Icon :name="props.icon" class="text-vlada-color-2 md:text-white text-2xl"/>
     </a>
-    <div v-if="props.type === 'quaternary'" role="button" class="bg-vlada-color-8 py-2 px-4 text-center rounded-3xl text-2xl">
+    <div v-if="props.type === 'quaternary'" role="button" class="bg-vlada-color-8 py-2 px-4 text-center rounded-3xl text-base md:text-2xl">
         <slot/>
     </div>
 </template>

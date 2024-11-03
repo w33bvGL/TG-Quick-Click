@@ -3,8 +3,9 @@
 </script>
 
 <template>
-    <div>
-        <IndexOrderAService/>
-    </div>
+    <p>wdwd</p>
 </template>
 
+<style scoped>
+
+</style>

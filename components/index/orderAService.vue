@@ -7,7 +7,7 @@ const description = ref('');
 const orderToggle = [
     {title: "Готовый", value: "ready"},
     {title: "Модифицированный", value: "modified"},
-    {title: "Подключение", value: "connected"},
+    {title: "Подключ", value: "connected"},
 ];
 
 const handleFormSubmit = () => {
@@ -19,27 +19,29 @@ const handleFormSubmit = () => {
 <template>
     <section class="order-a-service" id="order-a-service" aria-labelledby="order-service-heading">
         <div class="container max-w-5xl mx-auto px-2">
-            <h3 id="order-service-heading" class="text-black text-5xl pl-10">Заказать услугу</h3>
-            <div class="mt-7 bg-vlada-color-7 py-10 px-6 rounded-2xl">
-                <p class="text-2xl text-center">Выберите услугу</p>
-                <form class="w-full mt-5" @submit.prevent="handleFormSubmit" aria-describedby="service-description">
-                    <div class="flex justify-center gap-7">
+            <h3 class="text-white text-center md:text-left md:text-black text-2xl md:text-5xl md:pr-10">Заказать
+                услугу</h3>
+            <div class="mt-4 md:mt-7 bg-vlada-color-7 py-10 px-6 rounded-2xl">
+                <p class="font-bold text-base md:text-2xl text-center">Услуга</p>
+                <form class="w-full mt-2 md:mt-5" @submit.prevent="handleFormSubmit"
+                      aria-describedby="service-description">
+                    <div class="flex justify-center gap-2 md:gap-7 flex-col md:flex-row">
                         <UiToggle class="" v-for="data in orderToggle" :label="data.title" type="primary"
                                   v-model="selectedService" :value="data.value"/>
                     </div>
-                    <div class="mt-7">
-                        <label for="serviceDescription" class="text-2xl block text-center">Описание задачи</label>
+                    <div class="mt-5 md:mt-7">
+                        <label for="serviceDescription" class="font-bold text-base block md:text-2xl text-center">Описание
+                            задачи</label>
                         <textarea id="serviceDescription" v-model="description" rows="4"
-                                  class="outline-none mt-5 block w-full rounded-2xl border-gray-300 placeholder-black px-7 py-2 text-xl shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                  class="outline-none mt-2 md:mt-5 block w-full rounded-2xl border-gray-300 placeholder-black px-7 py-2 text-base md:text-xl shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                   placeholder="Опишите вашу задачу здесь..."
                                   aria-required="true"></textarea>
                     </div>
-                    <div class="mt-5">
+                    <div class="mt-2 md:mt-5">
                         <UiButton type="quaternary" aria-label="Отправить форму для заказа услуги">
                             Отправить
                         </UiButton>
                     </div>
-
                 </form>
             </div>
         </div>
