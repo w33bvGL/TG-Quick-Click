@@ -4,6 +4,7 @@
 
 <template>
     <div>
+        <IndexPrimaryHeader/>
         <IndexOrderAService/>
     </div>
 </template>

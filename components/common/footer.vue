@@ -20,25 +20,25 @@ const emailLink = [
 <template>
     <footer class="footer bg-vlada-color-6 md:bg-vlada-color-4 rounded-t-2xl" id="footer">
         <div
-            class="vlada-container pt-12 pb-4 md:py-12 flex flex-col gap-5 lg:gap-3 lg:flex-row justify-between items-center">
+            class="vlada-container pt-4 md:py-12 flex flex-col gap-5 lg:gap-3 lg:flex-row justify-between items-center">
             <div>
-                <h3 class="text-white text-5xl">Связаться</h3>
+                <h3 class="text-white text-2xl md:text-5xl">Связаться</h3>
             </div>
             <div class="flex gap-5 flex-row flex-wrap justify-center items-center">
                 <div class="bg-vlada-color-5 p-5 rounded-2xl">
-                    <p class="text-2xl text-white">Соцсети</p>
+                    <p class="text-sm md:text-2xl text-white">Соцсети</p>
                     <div class="flex gap-2 mt-2">
                         <UiButton v-for="data in socialLinks" type="primary" :to="data.to" :icon="data.icon"/>
                     </div>
                 </div>
                 <div class="bg-vlada-color-5 p-5 rounded-2xl">
-                    <p class="text-2xl text-white">Телефон</p>
+                    <p class="text-sm md:text-2xl text-white">Телефон</p>
                     <div class="flex gap-2 mt-2">
                         <UiButton v-for="data in phoneLink" type="secondary" :to="data.to">{{ data.title }}</UiButton>
                     </div>
                 </div>
                 <div class="bg-vlada-color-5 p-5 rounded-2xl">
-                    <p class="text-2xl text-white">Почта</p>
+                    <p class="text-sm md:text-2xl text-white">Почта</p>
                     <div class="flex gap-2 mt-2">
                         <UiButton v-for="data in emailLink" type="secondary" :to="data.to">{{ data.title }}</UiButton>
                     </div>

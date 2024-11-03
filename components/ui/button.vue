@@ -13,15 +13,15 @@ const props = defineProps<Props>();
        :key="props.to"
        :href="props.to"
        :target="props.to.startsWith('tel:' || 'mailto:') ? '_self' : '_blank'"
-       class="p-2.5 bg-white rounded-full flex items-center"
+       class="p-1.5 md:p-2 bg-white rounded-full flex items-center"
     >
-        <Icon :name="props.icon" class="text-vlada-color-5 text-4xl"/>
+        <Icon :name="props.icon" class="text-vlada-color-5 text-2xl md:text-4xl"/>
     </a>
     <a v-if="props.type === 'secondary'"
        :key="props.to"
        :href="props.to"
        :target="props.to.startsWith('tel:') ? '_self' : '_blank'"
-       class="text-white underline text-5xl text-nowrap"
+       class="text-white underline text-2xl md:text-5xl text-nowrap"
     >
         <slot/>
     </a>

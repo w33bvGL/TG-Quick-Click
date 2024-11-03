@@ -29,7 +29,7 @@ const socialLinks = [
                 <div class="w-full hidden md:flex">
                     <!-- тут видио имя или лого сайта )) -->
                 </div>
-                <div class="w-full hidden md:flex gap-3 text-2xl justify-center">
+                <div class="w-full hidden md:flex gap-5 text-2xl justify-center">
                     <a href="#" class="py-1 text-nowrap" v-for="data in navLinks" :key="data.to">{{ data.title }}</a>
                 </div>
                 <div class="w-full flex md:hidden">

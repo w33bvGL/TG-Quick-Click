@@ -28,6 +28,7 @@ export default {
                 'vlada-color-6': '#464646',
                 'vlada-color-7': '#70EE9C',
                 'vlada-color-8': '#A3A7FF',
+                'vlada-color-9': '#3B3B3B'
             },
             borderWidth: {
                 '5': '5px',

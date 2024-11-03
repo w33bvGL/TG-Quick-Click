@@ -18,10 +18,10 @@ const handleFormSubmit = () => {
 
 <template>
     <section class="order-a-service" id="order-a-service" aria-labelledby="order-service-heading">
-        <div class="container max-w-5xl mx-auto px-2">
+        <div class="container max-w-5xl mx-auto px-2 mb-6 md:mb-32">
             <h3 class="text-white text-center md:text-left md:text-black text-2xl md:text-5xl md:pr-10">Заказать
                 услугу</h3>
-            <div class="mt-4 md:mt-7 bg-vlada-color-7 py-10 px-6 rounded-2xl">
+            <div class="mt-4 bg-vlada-color-7 py-10 px-6 rounded-2xl">
                 <p class="font-bold text-base md:text-2xl text-center">Услуга</p>
                 <form class="w-full mt-2 md:mt-5" @submit.prevent="handleFormSubmit"
                       aria-describedby="service-description">
