@@ -5,6 +5,7 @@
 <template>
     <div>
         <IndexPrimaryHeader/>
+        <IndexWeOffer/>
         <IndexOrderAService/>
     </div>
 </template>
