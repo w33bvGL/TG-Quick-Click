@@ -6,6 +6,7 @@
     <div>
         <IndexPrimaryHeader/>
         <IndexWeOffer/>
+        <IndexCase/>
         <IndexOrderAService/>
     </div>
 </template>
