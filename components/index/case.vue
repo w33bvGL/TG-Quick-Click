@@ -6,14 +6,14 @@ import 'swiper/swiper-bundle.css';
 const categories = ref(['Все', 'Кликер', 'P2E', 'Функциональные']);
 const activeCategory = ref('Все');
 const allSlides = ref([
-    {title: 'Kurilian Bobtail', category: 'Кликер', bgColor: '11'},
-    {title: 'Clicker', category: 'Кликер', bgColor: '11'},
-    {title: 'Creative brain', category: 'Кликер', bgColor: '11'},
-    {title: 'Top Friends', category: 'P2E', bgColor: '10'},
-    {title: 'Hilton', category: 'P2E', bgColor: '10'},
-    {title: 'Creative brain', category: 'P2E', bgColor: '10'},
-    {title: 'Kurilian Bobtail', category: 'Функциональные', bgColor: '11'},
-    {title: 'Kurilian Bobtail', category: 'Функциональные', bgColor: '11'},
+    {title: 'Kurilian Bobtail', category: 'Кликер', imageUrl: "kurilian-bobtail-one", bgColor: '11'},
+    {title: 'Clicker', category: 'Кликер', imageUrl: "clicker-one", bgColor: '11'},
+    {title: 'Creative brain', category: 'Кликер', imageUrl: "creative-brain-one", bgColor: '11'},
+    {title: 'Top Friends', category: 'P2E', imageUrl: "top-friends-one", bgColor: '10'},
+    {title: 'Hilton', category: 'P2E', imageUrl: "hilton-one", bgColor: '10'},
+    {title: 'Creative brain', category: 'P2E', imageUrl: "creative-brain-two", bgColor: '10'},
+    {title: 'Kurilian Bobtail', category: 'Функциональные', imageUrl: "kurilian-bobtail-two", bgColor: '11'},
+    {title: 'Kurilian Bobtail', category: 'Функциональные', imageUrl: "kurilian-bobtail-three", bgColor: '11'},
 ]);
 
 const filteredSlides = ref([...allSlides.value.slice(0, 10)]);
@@ -35,7 +35,6 @@ function filterByCategory(category: string) {
         <div class=" vlada-container pt-12 pb-32">
             <div class="2xl:pl-72">
                 <h3 class="text-white text-left text-3xl md:text-5xl">Наши кейсы:</h3>
-
                 <div class="mt-5 flex flex-wrap gap-3 mb-5">
                     <button
                         :class="['cursor-pointer bg-white text-black px-10 py-2 rounded-3xl text-base md:text-xl bg-opacity-50 transition-opacity', {'button--active': activeCategory === cat}]"
@@ -58,25 +57,27 @@ function filterByCategory(category: string) {
                             spaceBetween: 15,
                         },
                         1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 20,
+                            slidesPerView: 2,
+                            spaceBetween: 80,
                         },
                     }"
                 >
-                    <swiper-slide v-for="(item, index) in filteredSlides" :key="index">
-                        <div class="px-[29px] py-[43px] flex justify-between" :class="`bg-vlada-color-${item.bgColor}`">
-                            <div>
-                                <h5 class="text-white md:text-[32px]">{{ item.title }}</h5>
+                    <swiper-slide v-for="(item, index) in filteredSlides" :key="index" class="w-[600px]">
+                        <div class="px-[29px] py-[43px] rounded-[30px] flex justify-between relative aspect-square"
+                             :class="`bg-vlada-color-${item.bgColor}`">
+                            <div class="h-full flex flex-col justify-between absolute top-0 py-10">
+                                <h5 class="text-white md:text-[32px] text-nowrap">{{ item.title }}</h5>
                                 <button
                                     class="cursor-pointer bg-white text-black px-10 py-2 rounded-3xl text-base md:text-xl bg-opacity-80 transition-opacity">
                                     {{ item.category }}
                                 </button>
                             </div>
-                            <div>
-                                wd
+                            <div class="w-full h-full flex justify-center p-20">
+                                <NuxtImg class="h-full scale-125"
+                                         :src="'/images/case/' + item.imageUrl + '.png'"></NuxtImg>
                             </div>
                         </div>
-                        
+
                     </swiper-slide>
                 </swiper>
             </div>
