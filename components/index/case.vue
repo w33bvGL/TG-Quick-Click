@@ -74,7 +74,8 @@ function filterByCategory(category: string) {
                             </div>
                             <div class="w-full h-full flex justify-center p-20">
                                 <NuxtImg class="h-full scale-125"
-                                         :src="'/images/case/' + item.imageUrl + '.png'"></NuxtImg>
+                                         :src="'/images/case/' + item.imageUrl + '.png'"
+                                         alt="Изображение кейсов сайта"></NuxtImg>
                             </div>
                         </div>
 
