@@ -39,13 +39,13 @@ function filterByCategory(category: string) {
 </script>
 
 <template>
-    <section class="case bg-vlada-color-4 rounded-2xl mb-32" id="case">
+    <section class="case bg-vlada-color-4 rounded-2xl mb-[60px] md:mb-32" id="case">
         <div class=" vlada-container pt-12 pb-32">
             <div class="2xl:pl-72">
                 <h3 class="text-white text-left text-3xl md:text-5xl">Наши кейсы:</h3>
               
-                <div class="mt-5 flex gap-3 mb-5">
-                    <button class="cursor-pointer bg-white text-black px-10 py-2 bg-opacity-50 rounded-3xl text-xl"
+                <div class="mt-5 flex flex-wrap gap-3 mb-5">
+                    <button class="cursor-pointer bg-white text-black px-10 py-2 bg-opacity-50 rounded-3xl text-base md:text-xl"
                             v-for="cat in categories" :key="cat" @click="filterByCategory(cat)">
                         {{ cat }}
                     </button>
