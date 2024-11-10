@@ -6,6 +6,10 @@ export default {
         './layouts/**/*.{vue,js,ts,jsx,tsx}',
         './assets/**/*.{vue,js,ts,jsx,tsx,sass,scss}',
     ],
+    safelist: [
+        'bg-vlada-color-10',
+        'bg-vlada-color-11',
+    ],
     theme: {
         extend: {
             maxWidth: {
@@ -29,6 +33,8 @@ export default {
                 'vlada-color-7': '#70EE9C',
                 'vlada-color-8': '#A3A7FF',
                 'vlada-color-9': '#3B3B3B',
+                'vlada-color-10': '#361640',
+                'vlada-color-11': '#221D1D',
                 'ms-color-10': '#ffe07f',
                 'ms-color-11': '#D9D9D9'
             },
