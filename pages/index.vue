@@ -3,13 +3,13 @@
 
 <template>
 	<div>
-		<LazyIndexPrimaryHeader/>
-		<LazyIndexWeOffer/>
-		<LazyIndexCase/>
-		<LazyIndexCompletedProduct/>
-		<LazyIndexClickers/>
-		<LazyIndexMiniGames/>
-		<LazyIndexOrderAService/>
+		<IndexPrimaryHeader/>
+		<IndexWeOffer/>
+		<IndexCase/>
+		<IndexCompletedProduct/>
+		<IndexClickers/>
+		<IndexMiniGames/>
+		<IndexOrderAService/>
 	</div>
 </template>
 
