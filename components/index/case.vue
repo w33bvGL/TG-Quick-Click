@@ -32,10 +32,12 @@ function filterByCategory(category: string) {
 
 <template>
     <section class="case bg-vlada-color-4 rounded-2xl mb-[60px] md:mb-32" id="case">
-        <div class=" vlada-container pt-12 pb-32">
+        <div class="vlada-container pt-12 pb-32">
             <div class="2xl:pl-72">
-                <h3 class="text-white text-left text-3xl md:text-5xl">Наши кейсы:</h3>
-                <div class="mt-5 flex flex-wrap gap-3 mb-5">
+                <h3 class="text-white text-left text-3xl md:text-5xl" data-aos="fade-right" data-aos-duration="500">Наши
+                    кейсы:</h3>
+                <div class="mt-5 flex flex-wrap gap-3 mb-5" data-aos="fade-in" data-aos-duration="500"
+                     data-aos-delay="100">
                     <button
                         :class="['cursor-pointer bg-white text-black px-10 py-2 rounded-3xl text-base md:text-xl bg-opacity-50 transition-opacity', {'button--active': activeCategory === cat}]"
                         v-for="cat in categories"
@@ -46,8 +48,8 @@ function filterByCategory(category: string) {
                     </button>
                 </div>
 
-                <swiper
-                    :breakpoints="{
+                <swiper data-aos="fade-in" data-aos-duration="500"
+                        :breakpoints="{
                         375: {
                             slidesPerView: 1,
                             spaceBetween: 10,
@@ -67,13 +69,14 @@ function filterByCategory(category: string) {
                              :class="`bg-vlada-color-${item.bgColor}`">
                             <div class="h-full flex flex-col justify-between absolute top-0 py-10">
                                 <h5 class="text-white md:text-[32px] text-nowrap">{{ item.title }}</h5>
-                                <button
-                                    class="cursor-pointer bg-white text-black px-10 py-2 rounded-3xl text-base md:text-xl bg-opacity-80 transition-opacity">
+                                <button data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200"
+                                        class="cursor-pointer bg-white text-black px-10 py-2 rounded-3xl text-base md:text-xl bg-opacity-80 transition-opacity">
                                     {{ item.category }}
                                 </button>
                             </div>
                             <div class="w-full h-full flex justify-center p-20">
-                                <NuxtImg class="h-full scale-125"
+                                <NuxtImg data-aos="fade-in" data-aos-duration="500" data-aos-delay="100"
+                                         class="h-full scale-125"
                                          :src="'/images/case/' + item.imageUrl + '.png'"
                                          alt="Изображение кейсов сайта"></NuxtImg>
                             </div>

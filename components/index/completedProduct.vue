@@ -1,11 +1,13 @@
 <template>
     <section class="section vlada-container">
         <div class="flex flex-col justify-center items-center xl:flex-row xl:items-start">
-            <h2 class="xl:mr-[90px] min-w-max text-[24px] text-white md:text-black md:text-[40px] font-medium">
+            <h3 data-aos="fade-right" data-aos-duration="500"
+                class="xl:mr-[90px] min-w-max text-[24px] text-white md:text-black md:text-[40px] font-medium">
                 Готовый продукт
-            </h2>
+            </h3>
             <div class="items-start flex flex-col lg:flex-row w-full px-[45px] xl:px-0 justify-between">
-                <div class="w-full justify-center grid grid-cols-3 gap-y-[40px] gap-x-[60px] lg:w-[40%]">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100"
+                     class="w-full justify-center grid grid-cols-3 gap-y-[40px] gap-x-[60px] lg:w-[40%]">
                     <div
                         class=" lg:max-w-[62px]"
                         v-for="item in services"
@@ -19,9 +21,13 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 mt-2 lg:mt-0">
-                    <NuxtImg class="hidden lg:block w-full" src="/images/completed-product-component-image.png"
+                    <NuxtImg data-aos="fade-left" data-aos-duration="500" data-aos-delay="100"
+                             class="hidden lg:block w-full"
+                             src="/images/completed-product-component-image.png"
                              alt="Изображение готового продукта нашего сайта" loading="lazy"/>
-                    <NuxtImg class="block lg:hidden w-full" src="/images/we-offer-clicker-app-image.svg"
+                    <NuxtImg data-aos="fade-left" data-aos-duration="500" data-aos-delay="100"
+                             class="block lg:hidden w-full"
+                             src="/images/we-offer-clicker-app-image.svg"
                              alt="Изображение готового продукта нашего сайта" loading="lazy"/>
                 </div>
             </div>

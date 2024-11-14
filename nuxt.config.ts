@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     swr: true,
     isr: true,
     prerender: true,
-    devtools: {enabled: true},
+    devtools: {enabled: false},
 
     app: {
         head: {
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
             }
         }
     },
-    
+
     runtimeConfig: {
         public: {
             appName: process.env.APP_NAME || 'APP_NAME IS MISSING',
@@ -34,11 +34,11 @@ export default defineNuxtConfig({
             appEmail: process.env.APP_EMAIL,
         }
     },
-    
+
     css: [
         '~/assets/styles/_root.sass',
     ],
-    
+
     modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/icon', 'nuxt-aos', 'nuxt-swiper'],
 
     tailwindcss: {
