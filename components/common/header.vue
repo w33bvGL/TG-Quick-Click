@@ -31,8 +31,10 @@ const handleScroll = throttle(() => {
 
 const scrollToSection = (id: string) => {
     const element = document.querySelector(id);
-    if (element) {
-        element.scrollIntoView({behavior: 'smooth'});
+    if (id === "#") {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
     }
 };
 
