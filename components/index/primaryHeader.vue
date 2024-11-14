@@ -6,8 +6,8 @@
     <section class="primary-header" id="primary-header">
         <div class="vlada-container md:mt-20 2xl:mb-28">
             <div class="bg-vlada-color-7 rounded-2xl md:px-7 2xl:min-h-[679px] max-h-[679px] flex justify-between">
-                <div class="relative w-1/2 hidden 2xl:block" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
-                    <NuxtImg src="/images/primary-header-clicker-app-image.svg"
+                <div class="relative w-1/2 hidden 2xl:block">
+                    <NuxtImg src="/images/primary-header-clicker-app-image.svg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"
                              class="absolute md:left-28 h-full scale-110 select-none pointer-events-none" alt="Изображение заголовка кликер-приложения"/>
                 </div>
                 <div class="relative w-full 2xl:w-1/2">
