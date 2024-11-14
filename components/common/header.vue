@@ -6,7 +6,7 @@ import {ref, onMounted, onBeforeUnmount} from 'vue';
 const config = useRuntimeConfig();
 
 const navLinks = [
-    {to: "#", title: "Главная"},
+    {to: "#main", title: "Главная"},
     {to: "#we-offer", title: "Услуги"},
     {to: "#case", title: "Кейсы"},
     {to: "#clickers", title: "Кликеры"},
@@ -31,7 +31,7 @@ const handleScroll = throttle(() => {
 
 const scrollToSection = (id: string) => {
     const element = document.querySelector(id);
-    if (id === "#") {
+    if (id === "#main") {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
