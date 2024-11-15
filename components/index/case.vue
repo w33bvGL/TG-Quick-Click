@@ -67,7 +67,7 @@ function filterByCategory(category: string) {
                     <swiper-slide v-for="(item, index) in filteredSlides" :key="index" class="w-[600px]">
                         <div class="px-[29px] py-[43px] rounded-[30px] flex justify-between relative aspect-square"
                              :class="`bg-vlada-color-${item.bgColor}`">
-                            <div class="h-full flex flex-col justify-between absolute top-0 py-10">
+                            <div class="h-full flex flex-col justify-between absolute top-0 py-10 z-10">
                                 <h5 class="text-white md:text-[32px] text-nowrap">{{ item.title }}</h5>
                                 <button data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200"
                                         class="cursor-pointer bg-white text-black px-10 py-2 rounded-3xl text-base md:text-xl bg-opacity-80 transition-opacity">
@@ -76,7 +76,7 @@ function filterByCategory(category: string) {
                             </div>
                             <div class="w-full h-full flex justify-center py-5">
                                 <NuxtImg data-aos="fade-in" data-aos-duration="500" data-aos-delay="100"
-                                         class="h-[500px] scale-125"
+                                         class="xl:h-[500px]"
                                          :src="'/images/case/' + item.imageUrl + '.png'"
                                          alt="Изображение кейсов сайта" loading="lazy"/>
                             </div>
