@@ -11,7 +11,7 @@
                         class="text-white text-center md:text-black text-3xl md:text-5xl">Мы предлагаем:</h3>
                     <NuxtImg data-aos="fade-in" data-aos-duration="500" data-aos-delay="100"
                              src="/images/we-offer-clicker-app-image.svg"
-                             class="mt-10 hidden xl:block w-full"
+                             class="mt-10 w-[764px] h-[732px]  hidden xl:block"
                              alt="Изображение заголовка кликер-приложения"/>
                 </div>
                 <div class="relative 2xl:w-1/2">

@@ -22,7 +22,7 @@
                 </div>
                 <div class="w-full lg:w-1/2 mt-2 lg:mt-0">
                     <NuxtImg data-aos="fade-left" data-aos-duration="500" data-aos-delay="100"
-                             class="hidden lg:block w-full"
+                             class="hidden lg:block w-[687px] h-[866px] object-cover"
                              src="/images/completed-product-component-image.png"
                              alt="Изображение готового продукта нашего сайта" loading="lazy"/>
                     <NuxtImg data-aos="fade-left" data-aos-duration="500" data-aos-delay="100"
