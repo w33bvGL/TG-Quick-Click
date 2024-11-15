@@ -74,11 +74,11 @@ function filterByCategory(category: string) {
                                     {{ item.category }}
                                 </button>
                             </div>
-                            <div class="w-full h-full flex justify-center p-20">
+                            <div class="w-full h-full flex justify-center py-5">
                                 <NuxtImg data-aos="fade-in" data-aos-duration="500" data-aos-delay="100"
-                                         class="h-full scale-125"
+                                         class="h-[500px] scale-125"
                                          :src="'/images/case/' + item.imageUrl + '.png'"
-                                         alt="Изображение кейсов сайта"></NuxtImg>
+                                         alt="Изображение кейсов сайта" loading="lazy"/>
                             </div>
                         </div>
 
